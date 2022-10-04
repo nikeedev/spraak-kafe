@@ -4,15 +4,13 @@ t.showturtle()
 
 print("Språk Kafe - FUS!")
 
-t.color("black")
-t.begin_fill()
+print(sc.screensize()[0])
 
+t.penup()
+t.setposition(100, -300)
 print(t.pos())
-femkant(50, 72)
-t.end_fill()
-femkant(50, -72)
-t.setposition(20, -100)
-t.circle(120)
+#t.forward(200)
 
+# ferdig
 # t.hideturtle()
 sc.exitonclick()
