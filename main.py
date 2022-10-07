@@ -1,8 +1,10 @@
 from funcs import *
 
-def say(inputt): 
-    print(inputt)
+def say_skjer(inputt):
+    print("Skjer nå:" + str(inputt))
 
+def say(inputt):
+    print(str(inputt))
 
 
 t.showturtle()
@@ -10,6 +12,8 @@ t.showturtle()
 print("FUS - Språk Kafe! - Bruno Leite. Bygget av Nikita @2022")
 
 print(sc.screensize())
+
+say_skjer("\nStart:\n")
 
 t.penup()
 
@@ -26,10 +30,11 @@ t.right(90)
 t.forward(45)
 
 # T-skjorte_Arm.1
-say("Arm1 pos: ")
-say(t.pos())
+say_skjer("\nT-skjorte_Arm.1:\n")
+say_skjer("Arm1 pos: ")
+say_skjer(t.pos())
 pos1 = t.pos()
-say("\n")
+say_skjer("\n")
 
 t.seth(0)
 t.left(90)
@@ -38,20 +43,20 @@ t.circle(120, 90)
 #t.forward(110)
 
 # klippen: 
-
+say_skjer("\nklippen:\n")
 t.forward(31.36)
 t.seth(225)
 t.forward(27.5)
 t.seth(135)
 t.forward(27.5)
-say("Klipp pos: ")
+say("\nKlipp pos:")
 say(t.pos())
 #t.seth(0)
-say("\n")
+say_skjer("\n")
 t.seth(180)
 t.forward(27.5)
 
-say(t.pos())
+say_skjer(t.pos())
 
 
 ###############################################
@@ -59,6 +64,9 @@ say(t.pos())
 
 # Andre side: 
 # """
+
+say_skjer("\nAndre side:\n")
+
 t.penup()
 t.seth(0)
 t.setposition(-130, -280)
@@ -68,18 +76,22 @@ t.pendown()
 
 # Arm2
 
+say_skjer("\nArm2:\n")
+
 t.forward(272)
 
 
 # T-skjorte_Arm.2
 
+say_skjer("\nT-skjorte_Arm.2:\n")
+
 t.left(90)
 t.forward(45)
 
-say("Arm2 pos: ")
-say(t.pos())
+say_skjer("\nArm2 pos:\n")
+say_skjer(t.pos())
 pos2 = t.pos()
-say("\n")
+say_skjer("\n")
 
 t.seth(0)
 t.right(90)
@@ -89,7 +101,12 @@ t.forward(28)
 
 # Tegne armene 
 
+say_skjer("\nTegne armene:\n")
+
 # Ekte arm.1
+
+say_skjer("\nEkte arm.1:\n")
+
 t.penup()
 
 t.setpos(pos1)
@@ -109,10 +126,13 @@ t.end_fill()
 
 
 # Ekte arm.2
+
+say_skjer("\nEkte arm.2:\n")
+
 t.penup()
 
-say("Heading: ")
-say(t.heading())
+say_skjer("Heading: ")
+say_skjer(t.heading())
 
 t.setpos(pos2)
 t.pendown()
@@ -137,7 +157,7 @@ t.home()
 t.seth(90)
 
 #"""
-say(t.pos())
+say_skjer(t.pos())
 
 t.hideturtle()
 
