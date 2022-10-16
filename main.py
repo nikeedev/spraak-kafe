@@ -1,7 +1,10 @@
+import time
 from funcs import *
 
+
 def say_skjer(inputt):
-    print("Skjer nå:" + str(inputt))
+    print("Skjer nå: " + str(inputt))
+
 
 def say(inputt):
     print(str(inputt))
@@ -13,9 +16,33 @@ print("FUS - Språk Kafe! - Bruno Leite. Bygget av Nikita @2022")
 
 print(sc.screensize())
 
+
+
 say_skjer("\nStart:\n")
 
 t.penup()
+
+# Hode
+
+t.setpos(36.89,112.74)
+t.pendown()
+
+t.seth(92)
+t.forward(40)
+
+t.seth(75)
+t.circle(100, 20)
+
+# Totalt forward: 46 pixels 
+t.forward(11.5)
+say("høyre øyre pos: ")
+
+say(t.pos())
+time.sleep(2)
+
+t.penup()
+"""
+# T-skjorte
 
 t.seth(90)
 t.setposition(130, -280)
@@ -40,31 +67,36 @@ t.seth(0)
 t.left(90)
 t.circle(120, 90)
 
-#t.forward(110)
+# t.forward(110)
 
 # klippen: 
 say_skjer("\nklippen:\n")
 t.forward(31.36)
+say("\nfør Klipp pos:")
+say(t.pos())
+say("\n")
 t.seth(225)
-t.forward(27.5)
-t.seth(135)
 t.forward(27.5)
 say("\nKlipp pos:")
 say(t.pos())
-#t.seth(0)
-say_skjer("\n")
+say("\n")
+t.seth(135)
+t.forward(27.5)
+say("\netter Klipp pos:")
+say(t.pos())
+say("\n")
+# t.seth(0)
 t.seth(180)
 t.forward(27.5)
 
 say_skjer(t.pos())
 
-
 ###############################################
 
 
 # Andre side: 
-# """
-
+"""
+"""
 say_skjer("\nAndre side:\n")
 
 t.penup()
@@ -79,7 +111,6 @@ t.pendown()
 say_skjer("\nArm2:\n")
 
 t.forward(272)
-
 
 # T-skjorte_Arm.2
 
@@ -99,9 +130,9 @@ t.circle(120, -90)
 t.seth(0)
 t.forward(28)
 
-# Tegne armene 
+# Tegner armene 
 
-say_skjer("\nTegne armene:\n")
+say_skjer("\nTegner armene:\n")
 
 # Ekte arm.1
 
@@ -123,7 +154,6 @@ t.forward(174.39)
 t.seth(0)
 t.forward(45)
 t.end_fill()
-
 
 # Ekte arm.2
 
@@ -149,16 +179,15 @@ t.seth(180)
 t.forward(45)
 t.end_fill()
 
-
-# ferdig 
+# ferdig
 t.penup()
 
 t.home()
 t.seth(90)
 
-#"""
-say_skjer(t.pos())
 
+# say_skjer(t.pos())
+"""
 t.hideturtle()
 
 sc.exitonclick()
