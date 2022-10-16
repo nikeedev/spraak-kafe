@@ -35,6 +35,9 @@ t.circle(100, 20)
 
 # Totalt forward: 46 pixels 
 t.forward(11.5)
+t.seth(25)
+t.color("red")
+t.circle(15, 100)
 say("høyre øyre pos: ")
 
 say(t.pos())
