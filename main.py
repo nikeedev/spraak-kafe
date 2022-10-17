@@ -27,20 +27,41 @@ t.penup()
 t.setpos(36.89,112.74)
 t.pendown()
 
-t.seth(92)
+
+t.seth(88)
 t.forward(40)
 
 t.seth(75)
 t.circle(100, 20)
 
-# Totalt forward: 46 pixels 
+
+# Totalt forward: 46 pixels
+say("denne:")
+say(t.pos())
+say("\n")
 t.forward(11.5)
 t.seth(25)
-t.color("red")
-t.circle(15, 100)
+
+t.color("black", "#d8854c")
+t.begin_fill()
+
+t.circle(15, 110)
 say("høyre øyre pos: ")
+t.seth(180)
+t.forward(4.95)
+t.seth(90)
+t.backward(34.5)
+t.forward(44.5) # +10 px
+
+t.circle(50, 180)
+
+t.forward(10)
+
 
 say(t.pos())
+say("\n")
+
+t.end_fill()
 time.sleep(2)
 
 t.penup()
@@ -191,7 +212,7 @@ t.seth(90)
 
 # say_skjer(t.pos())
 """
-t.hideturtle()
+#t.hideturtle()
 
 sc.exitonclick()
 
