@@ -91,8 +91,8 @@ t.pendown()
 t.seth(92)
 t.forward(40)
 
-t.seth(72)
-t.circle(100, -20)
+t.seth(75)
+t.circle(100, 20)
 
 t.penup()
 
