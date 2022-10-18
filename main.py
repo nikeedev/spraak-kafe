@@ -12,7 +12,7 @@ def say(inputt):
 
 t.showturtle()
 
-print("FUS - Språk Kafe! - Bruno Leite. Bygget av Nikita @2022")
+print("FUS - Språk Kafe! - Bruno Leite. Bygd av Nikita @2022")
 
 print(sc.screensize())
 
@@ -65,7 +65,9 @@ t.end_fill()
 time.sleep(2)
 
 t.penup()
+
 """
+
 # T-skjorte
 
 t.seth(90)
