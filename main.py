@@ -84,15 +84,16 @@ t.penup()
 
 # Hals 2
 
-t.setpos(-40.89, 112.74)
+t.setpos(-44.89, 112.74)
 t.pendown()
 
 
 t.seth(92)
 t.forward(40)
 
-t.seth(105)
-t.circle(100, 20)
+t.seth(88)
+
+t.circle(100, -20)
 
 t.penup()
 
