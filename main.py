@@ -18,13 +18,19 @@ print(sc.screensize())
 
 say_skjer("\nStart:\n")
 
+#while True:
 t.penup()
 
 # Hode
 
-t.setpos(36.89,112.74)
+t.setpos(36.89, 112.74)
 t.pendown()
 
+
+t.color("black", "#d8854c")
+t.begin_fill()
+
+# hals 1  
 
 t.seth(88)
 t.forward(40)
@@ -40,8 +46,6 @@ say("\n")
 t.forward(11.5)
 t.seth(25)
 
-t.color("black", "#d8854c")
-t.begin_fill()
 
 t.circle(15, 110)
 say("høyre øyre pos: ")
@@ -63,7 +67,7 @@ t.forward(34.5) # +10 px
 t.backward(34.5)
 t.seth(180)
 t.forward(4.95)
-t.seth(-1)
+t.seth(-135)
 t.circle(15, 110)
 say("Venstre øyre pos: ")
 say(t.pos())
@@ -74,13 +78,33 @@ say(t.pos())
 say("\n")
 
 t.end_fill()
-time.sleep(2)
+# time.sleep(2)
 
 t.penup()
 
-"""
+# Hals 2
 
-# T-skjorte
+t.setpos(-36.89, 112.74)
+t.pendown()
+
+
+t.seth(92)
+t.forward(40)
+
+t.seth(72)
+t.circle(100, -20)
+
+t.penup()
+
+#time.sleep(5)
+
+#t.clear()
+
+#"""
+
+########### # # # #############################
+##### # # # # ############ T-skjorte
+############ # # # ############################
 
 t.seth(90)
 t.setposition(130, -280)
@@ -133,8 +157,7 @@ say_skjer(t.pos())
 
 
 # Andre side: 
-"""
-"""
+
 say_skjer("\nAndre side:\n")
 
 t.penup()
@@ -225,9 +248,9 @@ t.seth(90)
 
 
 # say_skjer(t.pos())
-"""
-#t.hideturtle()
+#"""
+t.hideturtle()
 
-sc.exitonclick()
+sc.exitonclick()  
 
 exit(0)
