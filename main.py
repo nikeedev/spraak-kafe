@@ -74,28 +74,54 @@ say(t.pos())
 say("\n")
 t.seth(180)
 
-say(t.pos())
-say("\n")
 
-t.end_fill()
+
 # time.sleep(2)
 
-t.penup()
+# t.penup()
 
 # Hals 2
 
-t.setpos(-44.89, 112.74)
-t.pendown()
+# t.setpos(-44.89, 112.74)
+# t.pendown()
 
 
-t.seth(92)
-t.forward(40)
 
-t.seth(88)
+t.seth(268)
 
-t.circle(100, -20)
+t.circle(100, 25)
+
+t.seth(272)
+t.forward(43.51)
+
+
+say("Klipp pos hals: "+ str(t.pos()))
+say("\n")
+
+say_skjer("\nklippen:\n")
+t.seth(0)
+t.forward(31.36)
+say("\netter Klipp pos:")
+say(t.pos())
+say("\n")
+t.seth(-45)
+t.forward(27.5)
+say("\nKlipp pos:")
+say(t.pos())
+say("\n")
+t.seth(45)
+t.forward(27.5)
+say("\nfør Klipp pos:")
+say(t.pos())
+say("\n")
+t.seth(0)
+t.forward(18)
+t.seth(90)
+t.forward(5)
 
 t.penup()
+
+t.end_fill()
 
 #time.sleep(5)
 
@@ -250,7 +276,7 @@ t.seth(90)
 
 # say_skjer(t.pos())
 #"""
-t.hideturtle()
+#t.hideturtle()
 
 sc.exitonclick()  
 
