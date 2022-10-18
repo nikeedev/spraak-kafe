@@ -12,11 +12,9 @@ def say(inputt):
 
 t.showturtle()
 
-print("FUS - Språk Kafe! - Bruno Leite. Bygd av Nikita @2022")
+print("FUS - 10. trinn - Språk Kafe! - Bruno Leite. Bygd av Nikita @ 2022")
 
 print(sc.screensize())
-
-
 
 say_skjer("\nStart:\n")
 
@@ -47,6 +45,8 @@ t.begin_fill()
 
 t.circle(15, 110)
 say("høyre øyre pos: ")
+say(t.pos())
+say("\n")
 t.seth(180)
 t.forward(4.95)
 t.seth(90)
@@ -57,6 +57,18 @@ t.circle(50, 180)
 
 t.forward(10)
 
+# venstre øyre
+
+t.forward(34.5) # +10 px
+t.backward(34.5)
+t.seth(180)
+t.forward(4.95)
+t.seth(-1)
+t.circle(15, 110)
+say("Venstre øyre pos: ")
+say(t.pos())
+say("\n")
+t.seth(180)
 
 say(t.pos())
 say("\n")
