@@ -48,11 +48,11 @@ t.seth(25)
 
 
 t.circle(15, 110)
+t.seth(180)
+t.forward(4.95)
 say("høyre øyre pos: ")
 say(t.pos())
 say("\n")
-t.seth(180)
-t.forward(4.95)
 t.seth(90)
 t.backward(34.5)
 t.forward(44.5) # +10 px
@@ -65,15 +65,14 @@ t.forward(10)
 
 t.forward(34.5) # +10 px
 t.backward(34.5)
-t.seth(180)
-t.forward(4.95)
-t.seth(-135)
-t.circle(15, 110)
 say("Venstre øyre pos: ")
 say(t.pos())
 say("\n")
 t.seth(180)
-
+t.forward(4.95)
+t.seth(-135)
+t.circle(15, 110)
+t.seth(180)
 
 
 # time.sleep(2)
@@ -84,7 +83,6 @@ t.seth(180)
 
 # t.setpos(-44.89, 112.74)
 # t.pendown()
-
 
 
 t.seth(268)
@@ -120,8 +118,20 @@ t.seth(90)
 t.forward(5)
 
 t.penup()
-
 t.end_fill()
+
+# TODO: Create eyes.
+
+t.setpos(39.63, 222.97)
+t.seth(180)
+t.forward(20)
+t.seth(170)
+t.pendown()
+t.circle(20, 45)
+t.seth(180+45)
+t.circle(20, 45)
+
+t.penup()
 
 #time.sleep(5)
 
