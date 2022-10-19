@@ -122,15 +122,23 @@ t.end_fill()
 
 # TODO: Create eyes.
 
-t.setpos(39.63, 222.97)
-t.seth(180)
-t.forward(20)
-t.seth(170)
-t.pendown()
-t.circle(20, 45)
-t.seth(180+45)
-t.circle(20, 45)
 
+t.setpos(39.63, 202.97)
+t.seth(180)
+t.forward(16.5)
+t.seth(90)
+
+t.color("black", "white")
+t.begin_fill()
+t.pendown()
+t.circle(10, 360)
+t.penup()
+t.seth(270)
+t.forward(8)
+
+print(t.pos())
+
+t.end_fill()
 t.penup()
 
 #time.sleep(5)
