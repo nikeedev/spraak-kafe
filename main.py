@@ -123,6 +123,8 @@ t.end_fill()
 # TODO: Create eyes.
 
 
+# Høyre øye
+
 t.setpos(39.63, 202.97)
 t.seth(180)
 t.forward(16.5)
@@ -131,21 +133,65 @@ t.seth(90)
 t.color("black", "white")
 t.begin_fill()
 t.pendown()
-t.circle(10, 360)
+t.circle(10, 175)
+t.seth(0)
+t.forward(20)
+t.end_fill()
 t.penup()
-t.seth(270)
-t.forward(8)
+
+t.color("black", "black")
+t.backward(10)
+t.seth(90)
+t.forward(4)
+t.pendown()
+t.begin_fill()
+t.circle(1.75)
+t.end_fill()
+
+t.penup()
+
+################
+
+# Venstre øye
+
+t.seth(0)
+t.setpos(-60.37, 202.97)
+t.forward(16.5*2)
+t.seth(90)
+
+t.color("black", "white")
+t.begin_fill()
+t.pendown()
+t.circle(10, 175)
+t.seth(0)
+t.forward(20)
+t.end_fill()
+t.penup()
+
+t.color("black", "black")
+t.backward(7)
+t.seth(90)
+t.forward(4)
+t.pendown()
+t.begin_fill()
+t.circle(1.75)
+t.end_fill()
+
+t.penup()
+
 
 print(t.pos())
 
 t.end_fill()
 t.penup()
 
+t.home()
+
 #time.sleep(5)
 
 #t.clear()
 
-#"""
+"""
 
 ########### # # # #############################
 ##### # # # # ############ T-skjorte
@@ -293,7 +339,7 @@ t.seth(90)
 
 
 # say_skjer(t.pos())
-#"""
+"""
 #t.hideturtle()
 
 sc.exitonclick()  
