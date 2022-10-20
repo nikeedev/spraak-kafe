@@ -147,6 +147,20 @@ t.pendown()
 t.begin_fill()
 t.circle(1.75)
 t.end_fill()
+t.penup()
+
+
+t.seth(180)
+t.backward(12)
+t.forward(6)
+t.seth(90)
+t.forward(10)
+
+t.pendown()
+
+t.seth(115)
+
+t.circle(10, 145)
 
 t.penup()
 
@@ -176,9 +190,20 @@ t.pendown()
 t.begin_fill()
 t.circle(1.75)
 t.end_fill()
-
 t.penup()
 
+
+t.seth(0)
+t.backward(-2)
+t.forward(6)
+t.seth(90)
+t.forward(10)
+
+t.pendown()
+
+t.seth(115)
+
+t.circle(10, 145)
 
 print(t.pos())
 
