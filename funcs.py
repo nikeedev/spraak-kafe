@@ -3,7 +3,7 @@ import turtle
 t = turtle.Turtle()
 sc = turtle.Screen()
 
-t.speed(0)
+t.speed(19)
 
 
 t.shape("circle")

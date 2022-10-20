@@ -468,7 +468,7 @@ while True:
     t.home()
 
 
-    time.sleep(5)
+    time.sleep(7)
     t.clear()
 
     #t.hideturtle()
