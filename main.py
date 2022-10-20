@@ -18,462 +18,460 @@ print(sc.screensize())
 
 say_skjer("\nStart:\n")
 
-#while True:
-t.penup()
+while True:
+    t.penup()
 
-# Hode
+    # Hode
 
-t.setpos(36.89, 112.74)
-t.pendown()
+    t.setpos(36.89, 112.74)
+    t.pendown()
 
 
-t.color("black", "#d8854c")
-t.begin_fill()
+    t.color("black", "#d8854c")
+    t.begin_fill()
 
-# hals 1  
+    # hals 1  
 
-t.seth(88)
-t.forward(40)
+    t.seth(88)
+    t.forward(40)
 
-t.seth(75)
-t.circle(100, 20)
+    t.seth(75)
+    t.circle(100, 20)
 
 
-# Totalt forward: 46 pixels
-say("denne:")
-say(t.pos())
-say("\n")
-t.forward(11.5)
-t.seth(25)
+    # Totalt forward: 46 pixels
+    say("denne:")
+    say(t.pos())
+    say("\n")
+    t.forward(11.5)
+    t.seth(25)
 
 
-t.circle(15, 110)
-t.seth(180)
-t.forward(4.95)
-say("høyre øyre pos: ")
-say(t.pos())
-say("\n")
-t.seth(90)
-t.backward(34.5)
-t.forward(44.5) # +10 px
+    t.circle(15, 110)
+    t.seth(180)
+    t.forward(4.95)
+    say("høyre øyre pos: ")
+    say(t.pos())
+    say("\n")
+    t.seth(90)
+    t.backward(34.5)
+    t.forward(44.5) # +10 px
 
-print(f"Hår pos: {t.pos()}")
-t.circle(50, 180)
+    print(f"Hår pos: {t.pos()}")
+    t.circle(50, 180)
 
-t.forward(10)
+    t.forward(10)
 
-# venstre øyre
+    # venstre øyre
 
-t.forward(34.5) # +10 px
-t.backward(34.5)
-say("Venstre øyre pos: ")
-say(t.pos())
-say("\n")
-t.seth(180)
-t.forward(4.95)
-t.seth(-135)
-t.circle(15, 110)
-t.seth(180)
+    t.forward(34.5) # +10 px
+    t.backward(34.5)
+    say("Venstre øyre pos: ")
+    say(t.pos())
+    say("\n")
+    t.seth(180)
+    t.forward(4.95)
+    t.seth(-135)
+    t.circle(15, 110)
+    t.seth(180)
 
 
-# time.sleep(2)
+    # time.sleep(2)
 
-# t.penup()
+    # t.penup()
 
-# Hals 2
+    # Hals 2
 
-# t.setpos(-44.89, 112.74)
-# t.pendown()
+    # t.setpos(-44.89, 112.74)
+    # t.pendown()
 
 
-t.seth(268)
+    t.seth(268)
 
-t.circle(100, 25)
-say_skjer(f"Munn pos: {t.pos()}")
+    t.circle(100, 25)
+    say_skjer(f"Munn pos: {t.pos()}")
 
-t.seth(272)
-t.forward(43.51)
+    t.seth(272)
+    t.forward(43.51)
 
 
-say("Klipp pos hals: "+ str(t.pos()))
-say("\n")
+    say("Klipp pos hals: "+ str(t.pos()))
+    say("\n")
 
-say_skjer("\nklippen:\n")
-t.seth(0)
-t.forward(31.36)
-say("\netter Klipp pos:")
-say(t.pos())
-say("\n")
-t.seth(-45)
-t.forward(27.5)
-say("\nKlipp pos:")
-say(t.pos())
-say("\n")
-t.seth(45)
-t.forward(27.5)
-say("\nfør Klipp pos:")
-say(t.pos())
-say("\n")
-t.seth(0)
-t.forward(18)
-t.seth(90)
-t.forward(5)
+    say_skjer("\nklippen:\n")
+    t.seth(0)
+    t.forward(31.36)
+    say("\netter Klipp pos:")
+    say(t.pos())
+    say("\n")
+    t.seth(-45)
+    t.forward(27.5)
+    say("\nKlipp pos:")
+    say(t.pos())
+    say("\n")
+    t.seth(45)
+    t.forward(27.5)
+    say("\nfør Klipp pos:")
+    say(t.pos())
+    say("\n")
+    t.seth(0)
+    t.forward(18)
+    t.seth(90)
+    t.forward(5)
 
-t.penup()
-t.end_fill()
+    t.penup()
+    t.end_fill()
 
-# TODO: Create eyes.
+    # TODO: Create eyes.
 
 
-# Høyre øye
+    # Høyre øye
 
-t.setpos(39.63, 202.97)
-t.seth(180)
-t.forward(16.5)
-t.seth(90)
+    t.setpos(39.63, 202.97)
+    t.seth(180)
+    t.forward(16.5)
+    t.seth(90)
 
-t.color("black", "white")
-t.begin_fill()
-t.pendown()
-t.circle(10, 175)
-t.seth(0)
-t.forward(20)
-t.end_fill()
-t.penup()
+    t.color("black", "white")
+    t.begin_fill()
+    t.pendown()
+    t.circle(10, 175)
+    t.seth(0)
+    t.forward(20)
+    t.end_fill()
+    t.penup()
 
-t.color("black", "black")
-t.backward(10)
-t.seth(90)
-t.forward(4)
-t.pendown()
-t.begin_fill()
-t.circle(1.75)
-t.end_fill()
-t.penup()
+    t.color("black", "black")
+    t.backward(10)
+    t.seth(90)
+    t.forward(4)
+    t.pendown()
+    t.begin_fill()
+    t.circle(1.75)
+    t.end_fill()
+    t.penup()
 
 
-t.seth(180)
-t.backward(12)
-t.forward(6)
-t.seth(90)
-t.forward(10)
+    t.seth(180)
+    t.backward(12)
+    t.forward(6)
+    t.seth(90)
+    t.forward(10)
 
-t.pendown()
+    t.pendown()
 
-t.seth(115)
+    t.seth(115)
 
-t.circle(10, 145)
+    t.circle(10, 145)
 
-t.penup()
+    t.penup()
 
-################
+    ################
 
-# Venstre øye
+    # Venstre øye
 
-t.seth(0)
-t.setpos(-60.37, 202.97)
-t.forward(16.5*2)
-t.seth(90)
+    t.seth(0)
+    t.setpos(-60.37, 202.97)
+    t.forward(16.5*2)
+    t.seth(90)
 
-t.color("black", "white")
-t.begin_fill()
-t.pendown()
-t.circle(10, 175)
-t.seth(0)
-t.forward(20)
-t.end_fill()
-t.penup()
+    t.color("black", "white")
+    t.begin_fill()
+    t.pendown()
+    t.circle(10, 175)
+    t.seth(0)
+    t.forward(20)
+    t.end_fill()
+    t.penup()
 
-t.color("black", "black")
-t.backward(7)
-t.seth(90)
-t.forward(4)
-t.pendown()
-t.begin_fill()
-t.circle(1.75)
-t.end_fill()
-t.penup()
+    t.color("black", "black")
+    t.backward(7)
+    t.seth(90)
+    t.forward(4)
+    t.pendown()
+    t.begin_fill()
+    t.circle(1.75)
+    t.end_fill()
+    t.penup()
 
 
-t.seth(0)
-t.backward(-2)
-t.forward(6)
-t.seth(90)
-t.forward(10)
+    t.seth(0)
+    t.backward(-2)
+    t.forward(6)
+    t.seth(90)
+    t.forward(10)
 
-t.pendown()
+    t.pendown()
 
-t.seth(115)
+    t.seth(115)
 
-t.circle(10, 145)
+    t.circle(10, 145)
 
-print(t.pos())
-
-t.end_fill()
-t.penup()
-
-t.color("black", "white")
+    print(t.pos())
+
+    t.end_fill()
+    t.penup()
+
+    t.color("black", "white")
 
-t.seth(0)
-t.setpos(-33, 162)
-t.pendown()
-t.begin_fill()
-t.forward(50)
-t.seth(270)
-t.circle(-25, 180)
+    t.seth(0)
+    t.setpos(-33, 162)
+    t.pendown()
+    t.begin_fill()
+    t.forward(50)
+    t.seth(270)
+    t.circle(-25, 180)
 
 
-t.end_fill()
-t.penup()
+    t.end_fill()
+    t.penup()
 
-t.seth(270)
-t.forward(12.5)
+    t.seth(270)
+    t.forward(12.5)
 
 
-t.seth(0)
-t.forward(5)
-t.pendown()
-t.forward(41)
+    t.seth(0)
+    t.forward(5)
+    t.pendown()
+    t.forward(41)
 
-t.end_fill()
-t.penup()
+    t.end_fill()
+    t.penup()
 
-t.seth(90)
-t.forward(12.5)
+    t.seth(90)
+    t.forward(12.5)
 
-t.seth(180)
-t.pendown()
+    t.seth(180)
+    t.pendown()
 
-# tenner
+    # tenner
 
-t.fd(8.3)
-t.seth(270)
-t.forward(22)
-t.back(22)
-t.seth(180)
+    t.fd(8.3)
+    t.seth(270)
+    t.forward(22)
+    t.back(22)
+    t.seth(180)
 
-t.fd(8.3)
-t.seth(270)
-t.forward(24)
-t.back(24)
-t.seth(180)
-
-t.fd(4.15)
-
-print(f"Nase pos: {t.pos()}")
-
-t.fd(4.15)
-t.seth(270)
-t.forward(24)
-t.back(24)
-t.seth(180)
-
-t.fd(8.3)
-t.seth(270)
-t.forward(22)
-t.back(22)
-t.seth(180)
-
-t.fd(8.3)
-t.seth(272)
-t.forward(12)
-t.back(12)
-t.seth(180)
-
-t.end_fill()
-t.penup()
-
-#######
-
-t.setpos(39.63,232.97)
-t.seth(90)
-t.color("black", "black")
-t.begin_fill()
-t.circle(50, 180)
-t.seth(0)
-t.pendown()
-t.fd(5)
-t.seth(90)
-t.fd(7)
-t.seth(0)
-t.fd(86)
-t.seth(0)
-t.fd(5)
-t.penup()
-t.end_fill()
+    t.fd(8.3)
+    t.seth(270)
+    t.forward(24)
+    t.back(24)
+    t.seth(180)
+
+    t.fd(4.15)
+
+    print(f"Nase pos: {t.pos()}")
+
+    t.fd(4.15)
+    t.seth(270)
+    t.forward(24)
+    t.back(24)
+    t.seth(180)
+
+    t.fd(8.3)
+    t.seth(270)
+    t.forward(22)
+    t.back(22)
+    t.seth(180)
+
+    t.fd(8.3)
+    t.seth(272)
+    t.forward(12)
+    t.back(12)
+    t.seth(180)
+
+    t.end_fill()
+    t.penup()
+
+    #######
+
+    t.setpos(39.63,232.97)
+    t.seth(90)
+    t.color("black", "black")
+    t.begin_fill()
+    t.circle(50, 180)
+    t.seth(0)
+    t.pendown()
+    t.fd(5)
+    t.seth(90)
+    t.fd(7)
+    t.seth(0)
+    t.fd(86)
+    t.seth(0)
+    t.fd(5)
+    t.penup()
+    t.end_fill()
 
-t.setpos(-12, 195.00)
-t.seth(270)
-t.pendown()
-t.forward(20)
-t.seth(170)
-t.fd(8)
-t.back(8)
-t.seth(10)
-t.fd(5)
+    t.setpos(-10, 195.00)
+    t.seth(270)
+    t.pendown()
+    t.forward(20)
+    t.seth(170)
+    t.fd(8)
+    t.back(8)
+    t.seth(10)
+    t.fd(8)
 
 
-t.end_fill()
-t.penup()
+    t.end_fill()
+    t.penup()
 
 
 
-########### # # # #############################
-##### # # # # ############ T-skjorte
-############ # # # ############################
+    ########### # # # #############################
+    ##### # # # # ############ T-skjorte
+    ############ # # # ############################
 
-t.seth(90)
-t.setposition(130, -280)
-print(t.pos())
-t.seth(91)
-t.pendown()
-t.forward(272)
+    t.seth(90)
+    t.setposition(130, -280)
+    print(t.pos())
+    t.seth(91)
+    t.pendown()
+    t.forward(272)
 
-# Arm1
+    # Arm1
 
-t.right(90)
-t.forward(45)
+    t.right(90)
+    t.forward(45)
 
-# T-skjorte_Arm.1
-say_skjer("\nT-skjorte_Arm.1:\n")
-say_skjer("Arm1 pos: ")
-say_skjer(t.pos())
-pos1 = t.pos()
-say_skjer("\n")
+    # T-skjorte_Arm.1
+    say_skjer("\nT-skjorte_Arm.1:\n")
+    say_skjer("Arm1 pos: ")
+    say_skjer(t.pos())
+    pos1 = t.pos()
+    say_skjer("\n")
 
-t.seth(0)
-t.left(90)
-t.circle(120, 90)
+    t.seth(0)
+    t.left(90)
+    t.circle(120, 90)
 
-# t.forward(110)
+    # t.forward(110)
 
-# klippen: 
-say_skjer("\nklippen:\n")
-t.forward(31.36)
-say("\nfør Klipp pos:")
-say(t.pos())
-say("\n")
-t.seth(225)
-t.forward(27.5)
-say("\nKlipp pos:")
-say(t.pos())
-say("\n")
-t.seth(135)
-t.forward(27.5)
-say("\netter Klipp pos:")
-say(t.pos())
-say("\n")
-# t.seth(0)
-t.seth(180)
-t.forward(27.5)
+    # klippen: 
+    say_skjer("\nklippen:\n")
+    t.forward(31.36)
+    say("\nfør Klipp pos:")
+    say(t.pos())
+    say("\n")
+    t.seth(225)
+    t.forward(27.5)
+    say("\nKlipp pos:")
+    say(t.pos())
+    say("\n")
+    t.seth(135)
+    t.forward(27.5)
+    say("\netter Klipp pos:")
+    say(t.pos())
+    say("\n")
+    # t.seth(0)
+    t.seth(180)
+    t.forward(27.5)
 
-say_skjer(t.pos())
+    say_skjer(t.pos())
 
-###############################################
+    ###############################################
 
 
-# Andre side: 
+    # Andre side: 
 
-say_skjer("\nAndre side:\n")
+    say_skjer("\nAndre side:\n")
 
-t.penup()
-t.seth(0)
-t.setposition(-130, -280)
-print(t.pos())
-t.seth(89)
-t.pendown()
+    t.penup()
+    t.seth(0)
+    t.setposition(-130, -280)
+    print(t.pos())
+    t.seth(89)
+    t.pendown()
 
-# Arm2
+    # Arm2
 
-say_skjer("\nArm2:\n")
+    say_skjer("\nArm2:\n")
 
-t.forward(272)
+    t.forward(272)
 
-# T-skjorte_Arm.2
+    # T-skjorte_Arm.2
 
-say_skjer("\nT-skjorte_Arm.2:\n")
+    say_skjer("\nT-skjorte_Arm.2:\n")
 
-t.left(90)
-t.forward(45)
+    t.left(90)
+    t.forward(45)
 
-say_skjer("\nArm2 pos:\n")
-say_skjer(t.pos())
-pos2 = t.pos()
-say_skjer("\n")
+    say_skjer("\nArm2 pos:\n")
+    say_skjer(t.pos())
+    pos2 = t.pos()
+    say_skjer("\n")
 
-t.seth(0)
-t.right(90)
-t.circle(120, -90)
-t.seth(0)
-t.forward(28)
+    t.seth(0)
+    t.right(90)
+    t.circle(120, -90)
+    t.seth(0)
+    t.forward(28)
 
-# Tegner armene 
+    # Tegner armene 
 
-say_skjer("\nTegner armene:\n")
+    say_skjer("\nTegner armene:\n")
 
-# Ekte arm.1
+    # Ekte arm.1
 
-say_skjer("\nEkte arm.1:\n")
+    say_skjer("\nEkte arm.1:\n")
 
-t.penup()
+    t.penup()
 
-t.setpos(pos1)
-t.pendown()
-t.color("black", "#d8854c")
-t.begin_fill()
+    t.setpos(pos1)
+    t.pendown()
+    t.color("black", "#d8854c")
+    t.begin_fill()
 
-t.seth(-95)
-t.forward(40)
-t.seth(-106)
-t.forward(140)
-t.seth(91)
-t.forward(174.39)
-t.seth(0)
-t.forward(45)
-t.end_fill()
+    t.seth(-95)
+    t.forward(40)
+    t.seth(-106)
+    t.forward(140)
+    t.seth(91)
+    t.forward(174.39)
+    t.seth(0)
+    t.forward(45)
+    t.end_fill()
 
-# Ekte arm.2
+    # Ekte arm.2
 
-say_skjer("\nEkte arm.2:\n")
+    say_skjer("\nEkte arm.2:\n")
 
-t.penup()
+    t.penup()
 
-say_skjer("Heading: ")
-say_skjer(t.heading())
+    say_skjer("Heading: ")
+    say_skjer(t.heading())
 
-t.setpos(pos2)
-t.pendown()
-t.color("black", "#d8854c")
-t.begin_fill()
+    t.setpos(pos2)
+    t.pendown()
+    t.color("black", "#d8854c")
+    t.begin_fill()
 
-t.seth(275)
-t.forward(40)
-t.seth(286)
-t.forward(140)
-t.seth(89)
-t.forward(174.39)
-t.seth(180)
-t.forward(45)
-t.end_fill()
+    t.seth(275)
+    t.forward(40)
+    t.seth(286)
+    t.forward(140)
+    t.seth(89)
+    t.forward(174.39)
+    t.seth(180)
+    t.forward(45)
+    t.end_fill()
 
-# ferdig
-t.penup()
+    # ferdig
+    t.penup()
 
-#t.home()
-t.seth(90)
-
-
-# say_skjer(t.pos())
-    
     #t.home()
+    t.seth(90)
 
 
-    #time.sleep(5)
+    # say_skjer(t.pos())
+        
+    t.home()
 
-    #t.clear()
 
-#t.hideturtle()
+    time.sleep(5)
+    t.clear()
 
-sc.exitonclick()  
+    #t.hideturtle()
+
 
 exit(0)
