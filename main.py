@@ -244,6 +244,8 @@ t.forward(12.5)
 t.seth(180)
 t.pendown()
 
+# tenner
+
 t.fd(8.3)
 t.seth(270)
 t.forward(22)
@@ -256,7 +258,11 @@ t.forward(24)
 t.back(24)
 t.seth(180)
 
-t.fd(8.3)
+t.fd(4.15)
+
+print(f"Nase pos: {t.pos()}")
+
+t.fd(4.15)
 t.seth(270)
 t.forward(24)
 t.back(24)
@@ -277,6 +283,7 @@ t.seth(180)
 t.end_fill()
 t.penup()
 
+#######
 
 t.setpos(39.63,232.97)
 t.seth(90)
@@ -292,12 +299,24 @@ t.seth(0)
 t.fd(86)
 t.seth(0)
 t.fd(5)
+t.penup()
+t.end_fill()
+
+t.setpos(-12, 195.00)
+t.seth(270)
+t.pendown()
+t.forward(20)
+t.seth(170)
+t.fd(8)
+t.back(8)
+t.seth(10)
+t.fd(5)
+
 
 t.end_fill()
 t.penup()
 
 
-"""
 
 ########### # # # #############################
 ##### # # # # ############ T-skjorte
@@ -440,12 +459,19 @@ t.end_fill()
 # ferdig
 t.penup()
 
-t.home()
+#t.home()
 t.seth(90)
 
 
 # say_skjer(t.pos())
-"""
+    
+    #t.home()
+
+
+    #time.sleep(5)
+
+    #t.clear()
+
 #t.hideturtle()
 
 sc.exitonclick()  
