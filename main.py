@@ -57,8 +57,8 @@ t.seth(90)
 t.backward(34.5)
 t.forward(44.5) # +10 px
 
-t.circle(50, 180)
 print(f"Hår pos: {t.pos()}")
+t.circle(50, 180)
 
 t.forward(10)
 
@@ -277,12 +277,25 @@ t.seth(180)
 t.end_fill()
 t.penup()
 
-#t.home()
 
+t.setpos(39.63,232.97)
+t.seth(90)
+t.color("black", "black")
+t.begin_fill()
+t.circle(50, 180)
+t.seth(0)
+t.pendown()
+t.fd(5)
+t.seth(90)
+t.fd(7)
+t.seth(0)
+t.fd(86)
+t.seth(0)
+t.fd(5)
 
-#time.sleep(5)
+t.end_fill()
+t.penup()
 
-#t.clear()
 
 """
 
