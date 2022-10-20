@@ -211,9 +211,45 @@ print(t.pos())
 t.end_fill()
 t.penup()
 
-t.home()
+t.color("black", "white")
 
-t.setpos(-20, 161)
+t.seth(0)
+t.setpos(-33, 162)
+t.pendown()
+t.begin_fill()
+t.forward(50)
+t.seth(270)
+t.circle(-25, 180)
+
+
+t.end_fill()
+t.penup()
+
+t.seth(270)
+t.forward(12.5)
+
+
+t.seth(0)
+t.forward(5)
+t.pendown()
+t.forward(41)
+
+t.end_fill()
+t.penup()
+
+t.seth(90)
+t.forward(12.5)
+
+t.seth(180)
+t.pendown()
+
+
+
+t.end_fill()
+t.penup()
+
+#t.home()
+
 
 #time.sleep(5)
 
