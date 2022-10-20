@@ -88,6 +88,7 @@ t.seth(180)
 t.seth(268)
 
 t.circle(100, 25)
+say_skjer(f"Munn pos: {t.pos()}")
 
 t.seth(272)
 t.forward(43.51)
@@ -211,6 +212,8 @@ t.end_fill()
 t.penup()
 
 t.home()
+
+t.setpos(-20, 161)
 
 #time.sleep(5)
 
